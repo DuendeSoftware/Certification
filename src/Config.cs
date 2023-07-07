@@ -24,9 +24,14 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.Implicit,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
-                FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
+                PostLogoutRedirectUris = { "certification.openid.net/test/a/duende-op/post_logout_redirect" },
                     
+                FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
+                FrontChannelLogoutSessionRequired = true,
+                
+                BackChannelLogoutUri = "certification.openid.net/test/a/duende-op/backchannel_logout",
+                BackChannelLogoutSessionRequired = true,
+                
                 AllowedScopes = { "openid", "profile", "email", "phone", "address" }
             },
             
@@ -41,8 +46,13 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.Code,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
+                PostLogoutRedirectUris = { "certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                    
                 FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
+                FrontChannelLogoutSessionRequired = true,
+                
+                BackChannelLogoutUri = "certification.openid.net/test/a/duende-op/backchannel_logout",
+                BackChannelLogoutSessionRequired = true,
                     
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "email", "phone", "address" }
@@ -59,8 +69,13 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.Hybrid,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
+                PostLogoutRedirectUris = { "certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                    
                 FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
+                FrontChannelLogoutSessionRequired = true,
+                
+                BackChannelLogoutUri = "certification.openid.net/test/a/duende-op/backchannel_logout",
+                BackChannelLogoutSessionRequired = true,
                     
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "email", "phone", "address" }
