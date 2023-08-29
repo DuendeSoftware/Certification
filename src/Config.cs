@@ -23,6 +23,7 @@ public static class Config
                 ClientId = "implicit1",
                 AllowedGrantTypes = GrantTypes.Implicit,
                 RequirePkce = false,
+                AllowAccessTokensViaBrowser = true,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
                 PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
@@ -41,6 +42,7 @@ public static class Config
                 ClientId = "implicit2",
                 AllowedGrantTypes = GrantTypes.Implicit,
                 RequirePkce = false,
+                AllowAccessTokensViaBrowser = true,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
                 PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
@@ -66,6 +68,8 @@ public static class Config
                 RequirePkce = false,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
+                
+                //                          https://www.certification.openid.net/test/a/duende-op/post_logout_redirect
                 PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
                 FrontChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/frontchannel_logout",
@@ -113,6 +117,7 @@ public static class Config
 
                 AllowedGrantTypes = GrantTypes.Hybrid,
                 RequirePkce = false,
+                AllowAccessTokensViaBrowser = true,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
                 PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
@@ -137,6 +142,7 @@ public static class Config
 
                 AllowedGrantTypes = GrantTypes.Hybrid,
                 RequirePkce = false,
+                AllowAccessTokensViaBrowser = true,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
                 PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
