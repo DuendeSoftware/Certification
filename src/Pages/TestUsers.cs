@@ -51,7 +51,7 @@ public class TestUsers
                         new Claim(JwtClaimTypes.Profile, "https://duendesoftware.com/alice"),
                         new Claim(JwtClaimTypes.PreferredUserName, "alice"),
                         new Claim(JwtClaimTypes.MiddleName, "Mary"),
-                        new Claim(JwtClaimTypes.MiddleName, "A"),
+                        new Claim(JwtClaimTypes.NickName, "A"),
                         new Claim(JwtClaimTypes.Locale, "fr-CA"),
                         new Claim(JwtClaimTypes.Picture, "https://duendesoftware.com/alice/picture"),
                         new Claim(JwtClaimTypes.UpdatedAt, "1693317283", ClaimValueTypes.Integer),

@@ -26,12 +26,12 @@ public static class Config
                 AllowAccessTokensViaBrowser = true,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
-                PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
-                FrontChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/frontchannel_logout",
+                FrontChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/frontchannel_logout",
                 FrontChannelLogoutSessionRequired = true,
 
-                BackChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/backchannel_logout",
+                BackChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/backchannel_logout",
                 BackChannelLogoutSessionRequired = true,
 
                 AllowedScopes = { "openid", "profile", "email", "phone", "address" }
@@ -45,12 +45,12 @@ public static class Config
                 AllowAccessTokensViaBrowser = true,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
-                PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
-                FrontChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/frontchannel_logout",
+                FrontChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/frontchannel_logout",
                 FrontChannelLogoutSessionRequired = true,
 
-                BackChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/backchannel_logout",
+                BackChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/backchannel_logout",
                 BackChannelLogoutSessionRequired = true,
 
                 AllowedScopes = { "openid", "profile", "email", "phone", "address" }
@@ -70,12 +70,12 @@ public static class Config
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
                 
                 //                          https://www.certification.openid.net/test/a/duende-op/post_logout_redirect
-                PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
-                FrontChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/frontchannel_logout",
+                FrontChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/frontchannel_logout",
                 FrontChannelLogoutSessionRequired = true,
 
-                BackChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/backchannel_logout",
+                BackChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/backchannel_logout",
                 BackChannelLogoutSessionRequired = true,
 
                 AllowOfflineAccess = true,
@@ -94,12 +94,12 @@ public static class Config
                 RequirePkce = false,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
-                PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
-                FrontChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/frontchannel_logout",
+                FrontChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/frontchannel_logout",
                 FrontChannelLogoutSessionRequired = true,
 
-                BackChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/backchannel_logout",
+                BackChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/backchannel_logout",
                 BackChannelLogoutSessionRequired = true,
 
                 AllowOfflineAccess = true,
@@ -120,12 +120,12 @@ public static class Config
                 AllowAccessTokensViaBrowser = true,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
-                PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
-                FrontChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/frontchannel_logout",
+                FrontChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/frontchannel_logout",
                 FrontChannelLogoutSessionRequired = true,
 
-                BackChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/backchannel_logout",
+                BackChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/backchannel_logout",
                 BackChannelLogoutSessionRequired = true,
 
                 AllowOfflineAccess = true,
@@ -145,12 +145,12 @@ public static class Config
                 AllowAccessTokensViaBrowser = true,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
-                PostLogoutRedirectUris = { "https://certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
-                FrontChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/frontchannel_logout",
+                FrontChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/frontchannel_logout",
                 FrontChannelLogoutSessionRequired = true,
 
-                BackChannelLogoutUri = "https://certification.openid.net/test/a/duende-op/backchannel_logout",
+                BackChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/backchannel_logout",
                 BackChannelLogoutSessionRequired = true,
 
                 AllowOfflineAccess = true,
