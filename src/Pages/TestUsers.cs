@@ -36,12 +36,25 @@ public class TestUsers
                         new Claim(JwtClaimTypes.Name, "Alice Smith"),
                         new Claim(JwtClaimTypes.GivenName, "Alice"),
                         new Claim(JwtClaimTypes.FamilyName, "Smith"),
+                        
                         new Claim(JwtClaimTypes.Email, "AliceSmith@email.com"),
                         new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean),
                         new Claim(JwtClaimTypes.WebSite, "https://alice.com"),
                         new Claim(JwtClaimTypes.PhoneNumber, "123"),
                         new Claim(JwtClaimTypes.PhoneNumberVerified, "true", ClaimValueTypes.Boolean),
-                        new Claim(JwtClaimTypes.Address, JsonSerializer.Serialize(address), IdentityServerConstants.ClaimValueTypes.Json)
+                        new Claim(JwtClaimTypes.Address, JsonSerializer.Serialize(address), IdentityServerConstants.ClaimValueTypes.Json),
+                        
+                        // for completeness
+                        new Claim(JwtClaimTypes.ZoneInfo, "Europe/Paris"),
+                        new Claim(JwtClaimTypes.BirthDate, "1973-11-12"),
+                        new Claim(JwtClaimTypes.Gender, "female"),
+                        new Claim(JwtClaimTypes.Profile, "https://duendesoftware.com/alice"),
+                        new Claim(JwtClaimTypes.PreferredUserName, "alice"),
+                        new Claim(JwtClaimTypes.MiddleName, "Mary"),
+                        new Claim(JwtClaimTypes.MiddleName, "A"),
+                        new Claim(JwtClaimTypes.Locale, "fr-CA"),
+                        new Claim(JwtClaimTypes.Picture, "https://duendesoftware.com/alice/picture"),
+                        new Claim(JwtClaimTypes.UpdatedAt, "1693317283", ClaimValueTypes.Integer),
                     }
                 }
             };
