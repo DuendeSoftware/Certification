@@ -28,9 +28,35 @@ public static class Config
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
                 PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
+                AllowedScopes = { "openid", "profile", "email", "phone", "address" }
+            },
+            
+            new Client
+            {
+                ClientId = "implicit1front",
+                AllowedGrantTypes = GrantTypes.Implicit,
+                RequirePkce = false,
+                AllowAccessTokensViaBrowser = true,
+
+                RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
+
                 FrontChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/frontchannel_logout",
                 FrontChannelLogoutSessionRequired = true,
 
+                AllowedScopes = { "openid", "profile", "email", "phone", "address" }
+            },
+            
+            new Client
+            {
+                ClientId = "implicit1back",
+                AllowedGrantTypes = GrantTypes.Implicit,
+                RequirePkce = false,
+                AllowAccessTokensViaBrowser = true,
+
+                RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                
                 BackChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/backchannel_logout",
                 BackChannelLogoutSessionRequired = true,
 
@@ -68,12 +94,46 @@ public static class Config
                 RequirePkce = false,
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
-                
-                //                          https://www.certification.openid.net/test/a/duende-op/post_logout_redirect
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
+
+                AllowOfflineAccess = true,
+                AllowedScopes = { "openid", "profile", "email", "phone", "address" }
+            },
+            
+            new Client
+            {
+                ClientId = "code1front",
+                ClientSecrets =
+                {
+                    new Secret("secret".ToSha256())
+                },
+
+                AllowedGrantTypes = GrantTypes.Code,
+                RequirePkce = false,
+
+                RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
                 PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
                 FrontChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/frontchannel_logout",
                 FrontChannelLogoutSessionRequired = true,
+                
+                AllowOfflineAccess = true,
+                AllowedScopes = { "openid", "profile", "email", "phone", "address" }
+            },
+
+            new Client
+            {
+                ClientId = "code1back",
+                ClientSecrets =
+                {
+                    new Secret("secret".ToSha256())
+                },
+
+                AllowedGrantTypes = GrantTypes.Code,
+                RequirePkce = false,
+
+                RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
                 BackChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/backchannel_logout",
                 BackChannelLogoutSessionRequired = true,
@@ -81,7 +141,7 @@ public static class Config
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "email", "phone", "address" }
             },
-
+            
             new Client
             {
                 ClientId = "code2",
@@ -105,7 +165,6 @@ public static class Config
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "email", "phone", "address" }
             },
-
             
             new Client
             {
@@ -121,9 +180,47 @@ public static class Config
 
                 RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
                 PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                
+                AllowOfflineAccess = true,
+                AllowedScopes = { "openid", "profile", "email", "phone", "address" }
+            },
+            
+            new Client
+            {
+                ClientId = "hybrid1front",
+                ClientSecrets =
+                {
+                    new Secret("secret".ToSha256())
+                },
+
+                AllowedGrantTypes = GrantTypes.Hybrid,
+                RequirePkce = false,
+                AllowAccessTokensViaBrowser = true,
+
+                RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
                 FrontChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/frontchannel_logout",
                 FrontChannelLogoutSessionRequired = true,
+
+                AllowOfflineAccess = true,
+                AllowedScopes = { "openid", "profile", "email", "phone", "address" }
+            },
+            
+            new Client
+            {
+                ClientId = "hybrid1back",
+                ClientSecrets =
+                {
+                    new Secret("secret".ToSha256())
+                },
+
+                AllowedGrantTypes = GrantTypes.Hybrid,
+                RequirePkce = false,
+                AllowAccessTokensViaBrowser = true,
+
+                RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
+                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
 
                 BackChannelLogoutUri = "https://www.certification.openid.net/test/a/duende-op/backchannel_logout",
                 BackChannelLogoutSessionRequired = true,
@@ -132,6 +229,7 @@ public static class Config
                 AllowedScopes = { "openid", "profile", "email", "phone", "address" }
             },
             
+           
             new Client
             {
                 ClientId = "hybrid2",
