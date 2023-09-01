@@ -87,7 +87,7 @@ public static class Config
                 ClientId = "code1",
                 ClientSecrets =
                 {
-                    new Secret("secret".ToSha256())
+                    new Secret("9u30jjd8dj83jh98jdj898j8jsd89j983hh8ddh".ToSha256())
                 },
 
                 AllowedGrantTypes = GrantTypes.Code,
@@ -105,7 +105,7 @@ public static class Config
                 ClientId = "code1front",
                 ClientSecrets =
                 {
-                    new Secret("secret".ToSha256())
+                    new Secret("9u30jjd8dj83jh98jdj898j8jsd89j983hh8ddh".ToSha256())
                 },
 
                 AllowedGrantTypes = GrantTypes.Code,
@@ -126,7 +126,7 @@ public static class Config
                 ClientId = "code1back",
                 ClientSecrets =
                 {
-                    new Secret("secret".ToSha256())
+                    new Secret("9u30jjd8dj83jh98jdj898j8jsd89j983hh8ddh".ToSha256())
                 },
 
                 AllowedGrantTypes = GrantTypes.Code,
@@ -147,7 +147,7 @@ public static class Config
                 ClientId = "code2",
                 ClientSecrets =
                 {
-                    new Secret("secret".ToSha256())
+                    new Secret("9u30jjd8dj83jh98jdj898j8jsd89j983hh8ddh".ToSha256())
                 },
 
                 AllowedGrantTypes = GrantTypes.Code,
@@ -171,7 +171,7 @@ public static class Config
                 ClientId = "hybrid1",
                 ClientSecrets =
                 {
-                    new Secret("secret".ToSha256())
+                    new Secret("9u30jjd8dj83jh98jdj898j8jsd89j983hh8ddh".ToSha256())
                 },
 
                 AllowedGrantTypes = GrantTypes.Hybrid,
@@ -190,7 +190,7 @@ public static class Config
                 ClientId = "hybrid1front",
                 ClientSecrets =
                 {
-                    new Secret("secret".ToSha256())
+                    new Secret("9u30jjd8dj83jh98jdj898j8jsd89j983hh8ddh".ToSha256())
                 },
 
                 AllowedGrantTypes = GrantTypes.Hybrid,
@@ -212,7 +212,7 @@ public static class Config
                 ClientId = "hybrid1back",
                 ClientSecrets =
                 {
-                    new Secret("secret".ToSha256())
+                    new Secret("9u30jjd8dj83jh98jdj898j8jsd89j983hh8ddh".ToSha256())
                 },
 
                 AllowedGrantTypes = GrantTypes.Hybrid,
@@ -235,7 +235,7 @@ public static class Config
                 ClientId = "hybrid2",
                 ClientSecrets =
                 {
-                    new Secret("secret".ToSha256())
+                    new Secret("9u30jjd8dj83jh98jdj898j8jsd89j983hh8ddh".ToSha256())
                 },
 
                 AllowedGrantTypes = GrantTypes.Hybrid,
