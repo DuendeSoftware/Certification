@@ -93,8 +93,16 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.Code,
                 RequirePkce = false,
 
-                RedirectUris = { "https://www.certification.openid.net/test/a/duende-op/callback" },
-                PostLogoutRedirectUris = { "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect" },
+                RedirectUris =
+                {
+                    "https://www.certification.openid.net/test/a/duende-op/callback", 
+                    "https://localhost.emobix.co.uk:8443/test/a/duende-op/callback"
+                },
+                PostLogoutRedirectUris =
+                {
+                    "https://www.certification.openid.net/test/a/duende-op/post_logout_redirect", 
+                    "https://localhost.emobix.co.uk:8443/test/a/duende-op/post_logout_redirect"
+                },
 
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "email", "phone", "address" }
